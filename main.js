@@ -23,27 +23,10 @@ function selected(e) {
 }
 
 function submited () {
-console.log("hello")
+  document.querySelector('body').style.backgroundColor = "black"
  document.querySelector('.container').style.display = 'none';
- document.querySelector('.thank').style.display = 'block';
+ document.querySelector('.thank').style.display = 'flex';
  document.querySelector('.thank').style.visibility = "visible";
  document.querySelector('.rating').textContent = rating;
   
 }
-
-// function selected(e) {
-//   const test = document.querySelectorAll("li")
-//   const item =  test.filter(function(creature) {
-//      return creature !== "Ocean";
-//    });
-  
-//   console.log(test[0].firstChild.textContent);
-//  // items.filter(item => item.firstChild.textContent > 0)
-// //  items.forEach(item => {
-// //    if (item.firstChild.textContent === e.target.firstChild.textContent) {
-// //     e.target.classList.add('selected');
-// //    } else {
-// //     e.target.classList.remove('selected');
-// //    }
-// //  })
-// }
